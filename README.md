@@ -116,12 +116,12 @@ graph TD
 ### 5. Программа
 
 ```java
+import java.io.PrintStream;
 import java.util.Scanner;
-
 public class Main {
-   public static void main(String[] args) {
-      // Создаём Scanner для чтения данных с клавиатуры
-      Scanner in = new Scanner(System.in);
+    public static Scanner in = new Scanner(System.in);
+    public static PrintStream out = System.out;
+    public static void main(String[] args) {
 
       int x = in.nextInt(); // всего бананов
       int a = in.nextInt(); // нужно первому покупателю
